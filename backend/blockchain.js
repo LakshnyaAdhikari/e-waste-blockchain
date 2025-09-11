@@ -1,8 +1,7 @@
-// backend/blockchain.js
 const crypto = require('crypto');
 
 class Block {
-    constructor (index, timestamp, data, previousHash = '') {
+    constructor(index, timestamp, data, previousHash = '') {
         this.index = index;
         this.timestamp = timestamp;
         this.data = data;
@@ -11,7 +10,9 @@ class Block {
     }
 
     calculateHash() {
-        return crypto.createHash('sha256').update(this.index + this.previousHash + this.timestamp + JSON.stringify(this.data)).digest('hex');
+        return crypto.createHash('sha256')
+                     .update(this.index + this.previousHash + this.timestamp + JSON.stringify(this.data))
+                     .digest('hex');
     }
 }
 
@@ -28,9 +29,13 @@ class Blockchain {
         return this.chain[this.chain.length - 1];
     }
 
-    addBlock(newBlock) {
-        newBlock.previousHash = this.getLatestBlock().hash;
-        newBlock.hash = newBlock.calculateHash();
+    addBlock(data) {
+        const newBlock = new Block(
+            this.chain.length,
+            Date.now(),
+            data,
+            this.getLatestBlock().hash
+        );
         this.chain.push(newBlock);
     }
 
@@ -39,5 +44,4 @@ class Blockchain {
     }
 }
 
-// Export both the Blockchain class and the Block class
-module.exports = { Blockchain: new Blockchain(), Block };
+module.exports = { Blockchain, Block };
