@@ -1,6 +1,6 @@
 const devices = [
     { id: '1234', material: 'Plastic & Metals', status: 'In Use', location: 'Delhi', lastUpdated: Date.now() },
-    { id: '5678', material: 'Glass & Circuitry', status: 'Recycled', location: 'Mumbai', lastUpdated: Date.now() }
+    { id: '5678', material: 'Glass & Circuitry', status: 'Recycled', location: 'Mumbai', lastUpdated: Date.now() },
     { id: '9012', material: 'Aluminum & PCB', status: 'Disposed', location: 'Bengaluru', lastUpdated: Date.now() },
     { id: '3456', material: 'Copper & Plastic', status: 'In Use', location: 'Chennai', lastUpdated: Date.now() },
     { id: '7890', material: 'Glass & Plastic', status: 'Recycled', location: 'Hyderabad', lastUpdated: Date.now() },
