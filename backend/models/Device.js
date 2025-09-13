@@ -1,6 +1,36 @@
 const devices = [
     { id: '1234', material: 'Plastic & Metals', status: 'In Use', location: 'Delhi', lastUpdated: Date.now() },
     { id: '5678', material: 'Glass & Circuitry', status: 'Recycled', location: 'Mumbai', lastUpdated: Date.now() }
+    { id: '9012', material: 'Aluminum & PCB', status: 'Disposed', location: 'Bengaluru', lastUpdated: Date.now() },
+    { id: '3456', material: 'Copper & Plastic', status: 'In Use', location: 'Chennai', lastUpdated: Date.now() },
+    { id: '7890', material: 'Glass & Plastic', status: 'Recycled', location: 'Hyderabad', lastUpdated: Date.now() },
+    { id: '1122', material: 'Iron & PCB', status: 'Disposed', location: 'Pune', lastUpdated: Date.now() },
+    { id: '3344', material: 'Plastic & Lithium Battery', status: 'In Use', location: 'Kolkata', lastUpdated: Date.now() },
+    { id: '5566', material: 'Steel & Circuit Board', status: 'Recycled', location: 'Ahmedabad', lastUpdated: Date.now() },
+    { id: '7788', material: 'Copper & Plastic', status: 'Disposed', location: 'Jaipur', lastUpdated: Date.now() },
+    { id: '9900', material: 'Aluminum & Lithium Battery', status: 'In Use', location: 'Lucknow', lastUpdated: Date.now() },
+    { id: '2211', material: 'Glass & Circuitry', status: 'Recycled', location: 'Nagpur', lastUpdated: Date.now() },
+    { id: '4433', material: 'Iron & Plastic', status: 'Disposed', location: 'Patna', lastUpdated: Date.now() },
+    { id: '6655', material: 'Glass & Copper', status: 'In Use', location: 'Indore', lastUpdated: Date.now() },
+{ id: '8877', material: 'Plastic & PCB', status: 'Recycled', location: 'Bhopal', lastUpdated: Date.now() },
+{ id: '0099', material: 'Aluminum & Iron', status: 'Disposed', location: 'Surat', lastUpdated: Date.now() },
+{ id: '3345', material: 'Steel & Lithium Battery', status: 'In Use', location: 'Vadodara', lastUpdated: Date.now() },
+{ id: '5567', material: 'Copper & Plastic', status: 'Recycled', location: 'Thane', lastUpdated: Date.now() },
+{ id: '7789', material: 'Glass & PCB', status: 'Disposed', location: 'Coimbatore', lastUpdated: Date.now() },
+{ id: '9901', material: 'Plastic & Lithium Battery', status: 'In Use', location: 'Mysore', lastUpdated: Date.now() },
+{ id: '1123', material: 'Aluminum & Circuit Board', status: 'Recycled', location: 'Guwahati', lastUpdated: Date.now() },
+{ id: '3346', material: 'Iron & Plastic', status: 'Disposed', location: 'Amritsar', lastUpdated: Date.now() },
+{ id: '5568', material: 'Copper & PCB', status: 'In Use', location: 'Ranchi', lastUpdated: Date.now() },
+{ id: '7780', material: 'Glass & Lithium Battery', status: 'Recycled', location: 'Shimla', lastUpdated: Date.now() },
+{ id: '9902', material: 'Plastic & Circuit Board', status: 'Disposed', location: 'Trivandrum', lastUpdated: Date.now() },
+{ id: '2212', material: 'Steel & Copper', status: 'In Use', location: 'Bhubaneswar', lastUpdated: Date.now() },
+{ id: '4434', material: 'Aluminum & Glass', status: 'Recycled', location: 'Jalandhar', lastUpdated: Date.now() },
+{ id: '6656', material: 'Iron & Lithium Battery', status: 'Disposed', location: 'Dehradun', lastUpdated: Date.now() },
+{ id: '8878', material: 'Plastic & Iron', status: 'In Use', location: 'Gorakhpur', lastUpdated: Date.now() },
+{ id: '0010', material: 'Copper & Glass', status: 'Recycled', location: 'Panaji', lastUpdated: Date.now() },
+{ id: '3347', material: 'Steel & PCB', status: 'Disposed', location: 'Agra', lastUpdated: Date.now() },
+{ id: '5569', material: 'Glass & Plastic', status: 'In Use', location: 'Jammu', lastUpdated: Date.now() },
+{ id: '7790', material: 'Aluminum & Lithium Battery', status: 'Recycled', location: 'Shimoga', lastUpdated: Date.now() }
 ];
 
 module.exports = devices;
