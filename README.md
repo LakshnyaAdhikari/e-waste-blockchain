@@ -1,17 +1,24 @@
-# E-Waste Digital Passport & Supply Chain Tracker
+# E-Waste Digital Tracking System
 
-This project provides a solution for sustainable e-waste management by implementing a **blockchain-based digital passport system**. It tracks the lifecycle of electronic devices from production to recycling, ensuring transparency and operational efficiency.
+This project provides a practical solution for sustainable e-waste management by implementing a **blockchain-based digital passport system**.
 
-## 🚀 Features
+##  Purpose
 
-- Immutable Blockchain to record every device lookup action.
-- Simple frontend to query devices by their unique ID.
-- Backend API built with Node.js and Express.
-- Hardcoded sample devices for demonstration purposes.
+Tracks the full lifecycle of electronic devices from production to recycling in a tamper-proof and transparent way, solving key issues in e-waste management:
+- Lack of transparency in tracking device journeys.
+- No reliable proof of processing history.
+- Trust issues in resale or recycling markets.
 
-## ⚡️ Setup Instructions
+##  Features
 
-1. Install dependencies:
+- **Tamper-Proof Records**: Every device view or interaction is logged immutably on a simple blockchain.
+- **Transparent Tracking**: Lifecycle visibility from waste collection → segregation → syngas processing.
+- **Trust & Accountability**: Proof of purity levels and processing history builds trust.
+- **Lightweight Prototype**: No complex mining or heavy wallets. Simple permissioned blockchain for fast, energy-efficient operation.
+
+##  Setup Instructions
+
+1. Install backend dependencies:
     ```bash
     npm install
     ```
@@ -21,8 +28,31 @@ This project provides a solution for sustainable e-waste management by implement
     npm start
     ```
 
-3. Open `frontend/index.html` in a browser.
+3. Serve the frontend files:
+    ```bash
+    cd frontend
+    http-server
+    ```
 
-4. Enter a device ID (e.g., `1234` or `5678`) and click "Track Device" to see device info and blockchain record.
+4. Open in browser:  
+    ```
+    http://localhost:8080/index.html
+    ```
+
+5. Select a device ID and click “Track Device” to see live data + blockchain log.
+
+##  Tech Stack
+
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Node.js, Express.js
+- **Blockchain**: Custom simple in-memory blockchain (JavaScript)
+- **Serving Files**: http-server (npm package)
+- **CORS Handling**: cors npm package
+
+##  Future Scope
+
+- Add device registration via API.
+- Expand blockchain with Proof-of-Work or smart contracts.
+- Integrate with an actual recycling plant system.
 
 
