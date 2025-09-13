@@ -8,14 +8,51 @@
 </head>
 
 <body>
-    <h1>E-Waste Digital Passport Tracker</h1>
+    <div class="container">
+        <h1>E-Waste Digital Passport Tracker</h1>
 
-    <div>
-        <input type="text" id="deviceId" placeholder="Enter Device ID (e.g., 1234)">
-        <button onclick="fetchDeviceInfo()">Track Device</button>
+        <div class="tracker-card">
+            <label for="deviceId">Select Device ID:</label>
+            <select id="deviceId">
+                <option value="1234">1234</option>
+                <option value="5678">5678</option>
+                <option value="9012">9012</option>
+                <option value="3456">3456</option>
+                <option value="7890">7890</option>
+                <option value="1122">1122</option>
+                <option value="3344">3344</option>
+                <option value="5566">5566</option>
+                <option value="7788">7788</option>
+                <option value="9900">9900</option>
+                <option value="2211">2211</option>
+                <option value="4433">4433</option>
+                <option value="6655">6655</option>
+                <option value="8877">8877</option>
+                <option value="0099">0099</option>
+                <option value="3345">3345</option>
+                <option value="5567">5567</option>
+                <option value="7789">7789</option>
+                <option value="9901">9901</option>
+                <option value="1123">1123</option>
+                <option value="3346">3346</option>
+                <option value="5568">5568</option>
+                <option value="7780">7780</option>
+                <option value="9902">9902</option>
+                <option value="2212">2212</option>
+                <option value="4434">4434</option>
+                <option value="6656">6656</option>
+                <option value="8878">8878</option>
+                <option value="0010">0010</option>
+                <option value="3347">3347</option>
+                <option value="5569">5569</option>
+                <option value="7790">7790</option>
+            </select>
+
+            <button onclick="fetchDeviceInfo()">Track Device</button>
+        </div>
+
+        <pre id="deviceInfo">Device information will appear here.</pre>
     </div>
-
-    <pre id="deviceInfo">Device information will appear here.</pre>
 
     <script src="app.js"></script>
 </body>
