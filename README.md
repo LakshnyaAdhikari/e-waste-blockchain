@@ -51,7 +51,7 @@ Tracks the full lifecycle of electronic devices from production to recycling in 
 
 ##  Future Scope
 
-- Add device registration via API.
+- Add device registration and other features via API.
 - Expand blockchain with Proof-of-Work or smart contracts.
 - Integrate with an actual recycling plant system.
 
